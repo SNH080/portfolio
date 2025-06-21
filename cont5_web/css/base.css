@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Ohsquareair';
+    font-weight: normal; 
+    font-style: normal; 
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/cafe24/Cafe24Ohsquareair.woff2) format('woff2');
+    font-display: swap;
+}
+*{margin: 0; padding: 0;}
+body{
+    font-family: 'Cafe24Ssurround';
+    background-color: #fff;
+    color: #262626;
+    font-size: 12px;
+    line-height: 18px;
+}
+ul{list-style: none;}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{vertical-align: top;}
+.clear::after{
+    display: block;
+    content: '';
+    clear: both;
+}

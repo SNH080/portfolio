@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_pc">
+                <div class="header1">
+                    <h1 class="logo"><a href="#"><img src="img/logo.png" alt="로고"></a></h1><!-- logo -->
+                    <p class="search">
+                        <form method="get" action="http://search.naver.com/search.naver">
+                            <input name="query" id="search_bar">
+                            <input type="submit" value="" id="search_icon">
+                       </form>
+                    </p><!-- search -->
+                    <ul class="util clear">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">VIP LOUNGE</a></li>
+                        <li><a href="#">Club 서비스</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li class="my"><a href="#"><img src="img/mycgv.png" alt="내정보확인"></a></li>
+                    </ul><!-- uti1l -->
+                </div><!-- header -->
+                <div class="header2">
+                    <ul class="gnb clear">
+                        <li>
+                            <a href="#" class="menu">영화</a>
+                            <div class="submenu">
+                                <ul class="clear">
+                                    <li><a href="#">무비차트</a></li>
+                                    <li><a href="#">HD 트레일러</a></li>
+                                    <li><a href="#">무비파인더</a></li>
+                                    <li><a href="#">CGV 아트하우스</a></li>
+                                </ul>
+                            </div><!-- submenu -->
+                        </li>
+                        <li>
+                            <a href="#" class="menu">예매</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">빠른예매</a></li>
+                                    <li><a href="#">상영시간표</a></li>
+                                </ul>
+                            </div><!-- submenu -->
+                        </li>
+                        <li>
+                            <a href="#" class="menu">극장</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">CGV극장</a></li>
+                                    <li><a href="#">특별관</a></li>
+                                    <li><a href="#">CLUB 서비스</a></li>
+                                </ul>
+                            </div><!-- submenu -->
+                        </li>
+                        <li>
+                            <a href="#" class="menu">이벤트</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">매거진</a></li>
+                                </ul>
+                            </div><!-- submenu -->
+                        </li>
+                        <li>
+                            <a href="#" class="menu">스토어</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">영화관람권</a></li>
+                                    <li><a href="#">기프트카드</a></li>
+                                    <li><a href="#">콤보</a></li>
+                                    <li><a href="#">팝콘</a></li>
+                                    <li><a href="#">음료</a></li>
+                                    <li><a href="#">스낵</a></li>
+                                </ul>
+                            </div><!-- submenu -->
+                        </li>
+                    </ul><!-- gnb -->
+                </div><!-- header2 -->
+            </div><!-- header_pc -->
+            <div class="header_m">
+                <h1 class="mLogo"><a href="#"><img src="img/logo.png" alt="로고"></a></h1><!-- mLogo -->
+                <div class="hRight clear">
+                    <p class="mSearch"><a href="#"><img src="img/search.png" alt="검색아이콘"></a></p><!-- mSearch -->
+                    <p class="tikit"><a href="#">
+                        <img src="img/tiket.png" alt="티켓">
+                        <span>0</span>
+                    </a></p><!-- tikit -->
+                    <p class="mycgvM"><a href="#"><img src="img/mycgv.png" alt="내정보"></a></p><!-- mycgvM -->
+                    <div class="menutabM">
+                        <a href="#" class="open_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a><!-- open_btn -->
+                        <div class="over">
+                            <a class="cgv"><img src="img/logo.png"></a>
+                            <ul class="menutab_my">
+                                <li><a href="#"><img src="img/my.png" alt="로그인 이미지"></a></li>
+                                <li><p>로그인 해주세요.</p></li>
+                                <li class="menutab_login"><a href="#">로그인 ></a></li>
+                                <li></li>
+                            </ul><!-- menutab_my -->
+                            <ul class="menutab_sub clear">
+                                <li><a href="#">
+                                    <img src="img/menu_m_icon2.png">
+                                    <p>상영중인 영화</p>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="img/menu_m_icon3.png">
+                                    <p>극장별 예매</p>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="img/menu_m_icon.png">
+                                    <p>페스트오더</p>
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="img/menu_m_icon4.png">
+                                    <p>포토플레이</p>
+                                </a></li>
+                                <li></li>
+                            </ul>
+                            <ul class="menu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">내가 본 영화</a></li>
+                                <li><a href="#">대관/대관문의</a></li>
+                                <li><a href="#">고객센터</a></li>
+                            </ul>
+                        </div><!-- over -->
+                    </div><!-- menutabM -->
+                </div><!-- hRight -->
+                
+                <div class="gnb">
+                    <div class="gnbCls">
+                        <a href="#">X</a>
+                    </div>
+                    <ul class="gnbMenu">
+                        <li>
+                            <a href="#">영화</a>
+                            <ul class="subMenuG">
+                                <li><a href="#">무비차트</a></li>
+                                <li><a href="#">HD트레일러</a></li>
+                                <li><a href="#">무비파인더</a></li>
+                                <li><a href="#">CGV 아트하우스</a></li>
+                            </ul><!-- subMenu -->
+                        </li>
+                        <li>
+                            <a href="#">예매</a>
+                            <ul class="subMenuG">
+                                <li><a href="#">빠른예매</a></li>
+                                <li><a href="#">사영시간표</a></li>
+                            </ul><!-- subMenu -->
+                        </li>
+                        <li>
+                            <a href="#">극장</a>
+                            <ul class="subMenuG">
+                                <li><a href="#">CGV극장</a></li>
+                                <li><a href="#">특별관</a></li>
+                                <li><a href="#">CLUB서비스</a></li>
+                            </ul><!-- subMenu -->
+                        </li>
+                        <li>
+                            <a href="#">이벤트</a>
+                            <ul class="subMenuG">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">메거진</a></li>
+                            </ul><!-- subMenu -->
+                        </li>
+                        <li>
+                            <a href="#">스토어</a>
+                            <ul class="subMenuG">
+                                <li><a href="#">영화관람권</a></li>
+                                <li><a href="#">기프트카드</a></li>
+                                <li><a href="#">콤보</a></li>
+                                <li><a href="#">팝콘</a></li>
+                                <li><a href="#">음료</a></li>
+                                <li><a href="#">스낵</a></li>
+                            </ul><!-- subMenu -->
+                        </li>
+                    </ul><!-- gnbMenu -->
+                </div><!-- gnb -->
+
+            </div><!-- header_m -->
+        </header><!-- header -->
+        <section id="mainSlide">
+            <div class="main_img"><img src="img/mainSlide01.png" alt="메인이미지"></div>
+            <div class="main_img"><img src="img/mainSlide02.jpg" alt="메인이미지"></div>
+            <div class="main_img"><img src="img/mainSlide03.jpg" alt="메인이미지"></div>
+            <div class="main_img"><img src="img/mainSlide04.jpg" alt="메인이미지"></div>
+            <div class="main_img"><img src="img/mainSlide05.jpg" alt="메인이미지"></div>
+            <div class="main_img"><img src="img/mainSlide06.jpg" alt="메인이미지"></div>
+            <!-- <a href="#" class="play"><img src="img/play_icon.png" alt="플레이버튼"></a> --><!-- play -->
+            <!-- <div class="now"><a href="#">바로 예매</a></div> -->
+        </section><!-- mainSlide -->
+        <section id="container">
+            <div class="cont1">
+                <div class="view">
+                    <ul class="clear">
+                        <li class="on"><a href="#">무비차트</a></li>
+                        <li><a href="#">상영예정</a></li>
+                    </ul>
+                    <a href="#" class="more"><img src="img/cont_Go.png" alt="더보기">더보기</a>
+                </div><!-- view -->
+                <div class="cont1Box">
+                    <ul class="cont1A movie clear">
+                        <li>
+                            <div class="movieBox">
+                                <a href="#" class="post">
+                                    <img src="img/cont1_1.jpg" alt="영화 포스터">
+                                </a><!-- post -->
+                                <div class="cont1_hover">
+                                    <span>15</span>
+                                    <p>내전으로 고립된 낯선 도시<br>모가디슈, 지금부터 우리의<br>목표는 오로지 생존이다!<br><br>
+                                    대한민국이 UN가입을 위해<br>동분서주하던 시기 1991년<br>소말리아의 수도 모가디슈에서는<br>일촉즉발의 내전이 일어난다.</p>
+                                    <ul class="star clear">
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li class="last"><a href="#"><img src="img/star_h.png" alt="평점"></a></li>
+                                        <li><p>평점 : 8.80</p></li>
+                                    </ul><!-- star -->
+                                </div><!-- cont1_hover -->
+                            </div><!-- movieBox -->
+                            <div class="txt">
+                                <span>1</span>
+                                <p class="movieTit">모가디슈</p>
+                                <p class="movieTxt">예매율 26.1%</p>
+                            </div><!-- txt -->
+                            <div class="cont1_btn">바로예매</div><!-- cont1_btn -->
+                        </li>
+                        <li>
+                            <div class="movieBox">
+                                <a href="#" class="post">
+                                    <img src="img/cont1_2.png" alt="영화 포스터">
+                                </a><!-- post -->
+                                <div class="cont1_hover">
+                                    <span>12</span>
+                                    <p>미지의 세계 아마존에서 관광객들에게<br>최고의 스릴을 선사하는 재치 넘치는<br> 
+                                       크루즈  선장 프랭크(드웨인 존슨).<br><br>
+                                       고대 아마존의 전설을 쫓아 영국에서 온<br>식물 탐험가 릴리 박사(에밀리 블런트)<br>
+                                       가 의학의 미래를 바꿀 치유의 나무를<br>찾는 여정에 함께 할 것을 제안하면서,<br>
+                                       순탄치 않은 모험을 시작하게 된다.</p>
+                                    <ul class="star">
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><p>평점 : 8.08</p></li>
+                                    </ul><!-- star -->
+                                </div><!-- cont1_hover -->
+                            </div><!-- movieBox -->
+                            <div class="txt">
+                                <span>2</span>
+                                <p class="movieTit">정글크루즈</p>
+                                <p class="movieTxt">예매율 4.9%</p>
+                            </div><!-- txt -->
+                            <div class="cont1_btn">바로예매</div><!-- cont1_btn -->
+                        </li>
+                        <li>
+                            <div class="movieBox">
+                                <a href="#" class="post">
+                                    <img src="img/cont1_3.png" alt="영화 포스터">
+                                </a><!-- post -->
+                                <div class="cont1_hover">
+                                    <span>All</span>
+                                    <p>베이비인 줄 알았던 조카 ‘티나’가 알고<br>보니 베이비 주식회사 소속 임원으로<br>
+                                        밝혀진다. 뉴 보스 베이비 ‘티나’의<br>지시로 다시 베이비로 돌아간 ‘테드’와<br>
+                                        형 ‘팀’에게 주어진 시간은 48시간<br><br>
+                                        세상을 구하기 위한 미션을<br>무사히 완수할 수 있을 것인가?</p>
+                                    <ul class="star">
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><p>평점 : 9.55</p></li>
+                                    </ul><!-- star -->
+                                </div><!-- cont1_hover -->
+                            </div><!-- movieBox -->
+                            <div class="txt">
+                                <span>3</span>
+                                <p class="movieTit">보스베이비2</p>
+                                <p class="movieTxt">예매율 3.4%</p>
+                            </div><!-- txt -->
+                            <div class="cont1_btn">바로예매</div><!-- cont1_btn -->
+                        </li>
+                        <li>
+                            <div class="movieBox">
+                                <a href="#" class="post">
+                                    <img src="img/cont1_4.png" alt="영화 포스터">
+                                </a><!-- post -->
+                                <div class="cont1_hover">
+                                    <span>12</span>
+                                    <p>어벤져스의 히어로 블랙 위도우, ‘나타샤<br>로마노프’는 자신의 과거와 연결된 레드<br>
+                                        룸의 거대한 음모와 실체를 깨닫게 된다.<br>‘나타샤’는 스파이로 활약했던 자신의<br>
+                                        과거 뿐 아니라, 어벤져스가 되기 전<br>함께했던 동료들을 마주해야만 하는데…<br><br>
+                                        폭발하는 리얼 액션 카타르시스!<br>MCU의 새로운 시대를 시작할 첫 액션<br>
+                                        블록버스터를 만끽하라!</p>
+                                    <ul class="star">
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li class="last"><a href="#"><img src="img/star_h.png" alt="평점"></a></li>
+                                        <li><p>평점 : 9.07</p></li>
+                                    </ul><!-- star -->
+                                </div><!-- cont1_hover -->
+                            </div><!-- movieBox -->
+                            <div class="txt">
+                                <span>4</span>
+                                <p class="movieTit">블랙위도우</p>
+                                <p class="movieTxt">예매율 3.3%</p>
+                            </div><!-- txt -->
+                            <div class="cont1_btn">바로예매</div><!-- cont1_btn -->
+                        </li>
+                    </ul><!-- movie -->
+                    <ul class="cont1A movieB clear">
+                        <li>
+                            <div class="movieBox">
+                                <a href="#" class="post">
+                                    <img src="img/cont1_5.jpg" alt="영화 포스터">
+                                </a><!-- post -->
+                                <div class="cont1_hover">
+                                    <span>15</span>
+                                    <p>평소와 똑같던 어느 새벽, 서울 한복판에서<br>
+                                        증거도, 목격자도 없이 대한민국 톱배우<br>
+                                        '황정민'이 납치된다. 한 치 앞을 알 수 없는<br>
+                                        상황 속 살기 위한 극한의 탈주가 시작되고…<br>
+                                        관객들을 사로잡을 리얼리티 액션스릴러가 온다!</p>
+                                    <ul class="star clear">
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li class="last"><a href="#"><img src="img/star_h.png" alt="평점"></a></li>
+                                        <li><p>평점 : 8.80</p></li>
+                                    </ul><!-- star -->
+                                </div><!-- cont1_hover -->
+                            </div><!-- movieBox -->
+                            <div class="txt">
+                                <span>1</span>
+                                <p class="movieTit">인질</p>
+                                <p class="movieTxt">예매율 25.5%</p>
+                            </div><!-- txt -->
+                            <div class="cont1_btn">바로예매</div><!-- cont1_btn -->
+                        </li>
+                        <li>
+                            <div class="movieBox">
+                                <a href="#" class="post">
+                                    <img src="img/cont1_6.jpg" alt="영화 포스터">
+                                </a><!-- post -->
+                                <div class="cont1_hover">
+                                    <span>12</span>
+                                    <p>어둠의 세상을 지배해 온 '웬우'와<br>평범한 삶을 살고 싶어하는 '샹치'<br> 
+                                       그러나 더 이상 운명을 피할 수 없다는 것을 직감하고<br>
+                                       어머니가 남긴 가족의 비밀과 내면의<br>신비한 힘을 일깨우게 된다<br>누구보다 두려운 아버지 ‘웬우’를 마주해야 하는데...<br>
+                                       마블의 새로운 시대, 세상에 없던 힘이 탄생한다!
+                                    <ul class="star">
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><p>평점 : 8.08</p></li>
+                                    </ul><!-- star -->
+                                </div><!-- cont1_hover -->
+                            </div><!-- movieBox -->
+                            <div class="txt">
+                                <span>2</span>
+                                <p class="movieTit">샹치와 텐 링즈의 전설</p>
+                                <p class="movieTxt">예매율 4.9%</p>
+                            </div><!-- txt -->
+                            <div class="cont1_btn">바로예매</div><!-- cont1_btn -->
+                        </li>
+                        <li>
+                            <div class="movieBox">
+                                <a href="#" class="post">
+                                    <img src="img/cont1_7.jpg" alt="영화 포스터">
+                                </a><!-- post -->
+                                <div class="cont1_hover">
+                                    <span>15</span>
+                                    <p>부산 건설현장 직원들은 보이스피싱 전화로 목숨 같은 돈을 잃게된다. 현장작업반장인 전직형사 '서준'은 가족과 동료들의 돈 30억을 찾기 위해 보이스 피싱 조직을 추적하고 마침내 본거지 콜센터 침입에 성공하는데.. 그안에서 마주하게 된 거대한 범죄의 실체</p>
+                                    <ul class="star">
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li class="last"><a href="#"><img src="img/star_h.png" alt="평점"></a></li>
+                                        <li><p>평점 : 9.55</p></li>
+                                    </ul><!-- star -->
+                                </div><!-- cont1_hover -->
+                            </div><!-- movieBox -->
+                            <div class="txt">
+                                <span>3</span>
+                                <p class="movieTit">보이스</p>
+                                <p class="movieTxt">예매율 3.4%</p>
+                            </div><!-- txt -->
+                            <div class="cont1_btn">바로예매</div><!-- cont1_btn -->
+                        </li>
+                        <li>
+                            <div class="movieBox">
+                                <a href="#" class="post">
+                                    <img src="img/cont1_8.jpg" alt="영화 포스터">
+                                </a><!-- post -->
+                                <div class="cont1_hover">
+                                    <span>All</span>
+                                    <p>아이들의 낙서가 사라져 붕괴위기에 처한 낙서왕국은 낙서에너지를 모으기 위해 지구 침공을 시작한다. 지상의 용사로 선택 받은 짱구는 그림에 생명을 불어넣는 '미라클 크레용'을 얻게된다. 과연, 짱구는 낙서 용사들과 함께 떡잎마을과 세계를 구할 수 있을까?</p>
+                                    <ul class="star">
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                        <li><p>평점 : 9.07</p></li>
+                                    </ul><!-- star -->
+                                </div><!-- cont1_hover -->
+                            </div><!-- movieBox -->
+                            <div class="txt">
+                                <span>4</span>
+                                <p class="movieTit size">짱구는못말려 : 낙서왕국</p>
+                                <p class="movieTxt">예매율 3.3%</p>
+                            </div><!-- txt -->
+                            <div class="cont1_btn">바로예매</div><!-- cont1_btn -->
+                        </li>
+                    </ul><!-- movieB -->
+                </div><!-- cont1Box -->
+            </div><!-- cont1 -->
+            <div class="cont2">
+                <div class="cont2_pc">
+                    <h2>
+                        <img src="img/cont2_tit.jpg" alt="타이틀">
+                        <psan class="titBorder"></psan>
+                    </h2>
+                    <div class="event clear">
+                        <a href="#"><img src="img/event1.png" alt="이벤트"></a>
+                        <!-- <a href="#"><img src="img/logo.png" alt="이벤트"></a> -->
+                        <a href="#"><img src="img/event2.png" alt="이벤트"></a>
+                        <a href="#"><img src="img/event4.png" alt="이벤트"></a>
+                        <a href="#"><img src="img/event3.png" alt="이벤트"></a>
+                        <a href="#" class="eventLogo"><img src="img/logo.png" alt="이벤트"></a>
+                    </div><!-- event -->
+                </div><!-- cont2_pc -->
+                <div class="cont2_m">
+                    <h2>진행중인 이벤트</h2>
+                    <div class="cont2_mImg1">
+                        <p class="cont2_mTit">[모가디슈] N차 챌린지</p>
+                        <p class="cont2_mTxt">2021.07.23 ~ 08.22</p>
+                    </div><!-- cont2_mImg -->
+                    <div class="cont2_mImg2">
+                        <p class="cont2_mTit">[블랙핑크 더 무비] CGV필름마크</p>
+                        <p class="cont2_mTxt">2021.07.30 ~ 08.22</p>
+                    </div><!-- cont2_mImg -->
+                    <div class="cont2_mImg3">
+                        <p class="cont2_mTit">[정글크루즈] IMAX 한정판 포스터 증정</p>
+                        <p class="cont2_mTxt">2021.07.21 ~ 08.15</p>
+                    </div><!-- cont2_mImg -->
+                    <div class="cont2_mImg4">
+                        <p class="cont2_mTit">[방법:재차의] 방법예매 할인 이벤트!</p>
+                        <p class="cont2_mTxt">2021.07.22 ~ 08.10</p>
+                    </div><!-- cont2_mImg -->
+                </div><!-- cont2_m -->
+            </div><!-- cont2 -->
+            <div class="cont3">
+                <h2><a href="#"><img src="img/cont3_tit.jpg" alt="타이틀"></a></h2>
+                <ul>
+                    <li><a href="#">
+                        <div class="bg1"><a href="#">
+                            <img src="img/cont4_bar1.png" alt="컨텐츠4배경">
+                            <div class="cont3txt">
+                                <h3>4DX</h3>
+                                <p>4DX 상영관은 영화의 장면에 맞추어<br>움직이는 모션 시트와 더불어<br> 
+                                바람, 빛, 안내, 향기, 진동 등의 다양한<br>환경 효과를 느낄 수 있는 오감체험<br>  
+                                특별 상영관입니다.
+                                </p>
+                            </div>
+                        </a></div><!-- bg1 -->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="bg2"><a href="#">
+                            <img src="img/cont4_bar2.png" alt="컨텐츠4배경">
+                            <h3>IMAX</h3>
+                            <p>IMAX의 Customized projector로 <br>밝고 선명한 화질이 제공되며, 대형<br> 스크린에 맞는 맞춤형
+                                설계로 어느 <br>자리에서나 최고의 몰입이 가능합니다.</p></a>
+                        </div><!-- bg2 -->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="bg3"><a href="#">
+                            <img src="img/cont4_bar3.png" alt="컨텐츠4배경">
+                            <h3>SCREENX</h3>
+                            <p>SphereX는 진화된 기술로 컨텐츠 관람에<br>최적화 된 환경을 제공하는 특별관 입니다.<br>
+                                스크린, 사운드, 좌석이 만들어내는<br>최대 시너지로 ‘나를 감싸는 그강의 몰입감’<br>
+                                을 즐길 수있습니다.</p></a>
+                        </div><!-- bg3 -->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="bg4"><a href="#">
+                            <img src="img/cont4_bar4.png" alt="컨텐츠4배경">
+                            <h3>SUITE</h3>
+                            <p>호텔 스위트룸을 극장 안에 옮긴 듯<br>독립된 공간과 세련된 인테리어로<br>
+                                쾌적한 영화 관람 환경을 선사합니다.</p></a>
+                        </div><!-- bg4 -->
+                    </a></li>
+                </ul>
+            </div><!-- cont3 -->
+            <div class="cont4">
+                <ul class="clear">
+                    <li><a href="#">
+                        <img src="img/cont3_icon1.png" alt="메뉴아이콘">
+                        <p>VIP<br>Lounge</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/cont3_icon2.png" alt="메뉴아이콘">
+                        <p>할인카드<br>안내</p>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="point">P</div>
+                        <p>포인트</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/cont3_icon3.png" alt="메뉴아이콘">
+                        <p>Culb<br>서비스</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/cont3_icon4.png" alt="메뉴아이콘">
+                        <p>매거진</p>
+                    </a></li>
+                </ul>
+            </div><!-- cont4 -->
+            <div class="cont5">
+                <div class="art_bg"><img src="img/arthouse_bg.png"></div>
+                <h2><a href="#"><img src="img/arthouse_logo.jpg" alt="아트하우스로고"></a></h2>
+                <h3>NOW SHOWING</h3>
+                <a href="#" class="more"><img src="img/cont_Go.png" alt="더보기">더보기</a>
+                <ul class="art clear">
+                    <li>
+                        <a href="#" class="cont5Post">
+                            <img src="img/cont5_1.png" alt="영화 포스터">
+                        </a><!-- cont5Post -->
+                        <div class="cont5Txt">
+                            <span>1</span>
+                            <p class="artTit">우리,둘</p>
+                            <p class="artTxt">예매율 24.0%</p>
+                        </div><!-- cont5Txt -->
+                        <div class="cont5_btn">바로예매</div><!-- cont5_btn -->
+                        <div class="cont5_hover">
+                            <span>12</span>
+                            <p>서로 맞은편에 살고 있는 니나와 마도.<br>마냥 가까운 이웃처럼 보이지만 사실<br>
+                                둘은 20년째 사랑을 이어온 연인이다.<br><br>
+                                은퇴도 했으니 여생은 로마에 가서<br>편하게 살자는 니나의 제안에<br>
+                                마도는 가족들에게 숨겨왔던 비밀을<br>털어놓기로 한다.</p>
+                            <ul class="star">
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li class="last"><a href="#"><img src="img/star_h.png" alt="평점"></a></li>
+                                <li><p>평점 : 9.17</p></li>
+                            </ul><!-- star -->
+                        </div><!-- cont5_hover -->
+                    </li>
+                    <li>
+                        <a href="#" class="cont5Post">
+                            <img src="img/cont5_2.png" alt="영화 포스터">
+                        </a><!-- cont5Post -->
+                        <div class="cont5Txt">
+                            <span>2</span>
+                            <p class="artTit">피닉스</p>
+                            <p class="artTxt">예매율 23.8%</p>
+                        </div><!-- cont5Txt -->
+                        <div class="cont5_btn">바로예매</div><!-- cont5_btn -->
+                        <div class="cont5_hover">
+                            <span>12</span>
+                            <p>1945년 6월 아우슈비츠 생존자 넬리가<br>고향으로 돌아온다. 그녀의 얼굴은<br>
+                                심하게 훼손된 상태. 성형 수술을 받고<br>회복된 넬리는 사랑하는 남편 조니를<br>
+                                찾아 나선다.<br><br>
+                                마침내 재회하지만 아내가<br>죽었다고 믿는 조니는 얼굴이 변한<br> 
+                                넬리를 알아보지 못한다.</p>
+                            <ul class="star">
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li class="last"><a href="#"><img src="img/star_h.png" alt="평점"></a></li>
+                                <li><p>평점 : 8.55</p></li>
+                            </ul><!-- star -->
+                        </div><!-- cont5_hover -->
+                    </li>
+                    <li>
+                        <a href="#" class="cont5Post">
+                            <img src="img/cont5_3.png" alt="영화 포스터">
+                        </a><!-- cont5Post -->
+                        <div class="cont5Txt">
+                            <span>3</span>
+                            <p class="artTit">갈매기</p>
+                            <p class="artTxt">예매율 8.2%</p>
+                        </div><!-- cont5Txt -->
+                        <div class="cont5_btn">바로예매</div><!-- cont5_btn -->
+                        <div class="cont5_hover">
+                            <span>15</span>
+                            <p>일평생 스스로를 챙겨본 적 없는<br>오복은 가족도 세상도 외면한 자신을<br> 
+                                위해 처음 펄떡인다<br><br>
+                                “이 사람 저 사람 죄다 눈치보면 나는<br>언제 챙겨?” 세상을 향한 엄마 ‘오복’의<br> 
+                                날갯짓이 시작된다.</p>
+                            <ul class="star">
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><p>평점 : 9.70</p></li>
+                            </ul><!-- star -->
+                        </div><!-- cont5_hover -->
+                    </li>
+                    <li>
+                        <a href="#" class="cont5Post">
+                            <img src="img/cont5_4.jpg" alt="영화 포스터">
+                        </a><!-- cont5Post -->
+                        <div class="cont5Txt">
+                            <span>4</span>
+                            <p class="artTit">휴먼보이스</p>
+                            <p class="artTxt">예매율 8.0%</p>
+                        </div><!-- cont5Txt -->
+                        <div class="cont5_btn">바로예매</div><!-- cont5_btn -->
+                        <div class="cont5_hover">
+                            <span>12</span>
+                            <p>떠난 연인과 함께 살던 집에서 그의 마<br>지막 전화를 기다리는 여자. 드디어 전화<br>
+                                가 울린다. 조심스럽게 대화가 오가고<br>그가 다시 돌아올 수 있기만을 바라며<br>
+                                여자는 행복했던 추억을 이야기한다.<br><br>
+                                하지만 사랑이 식은 남자는 그녀에게<br>이별을 고하고, 여자는 그의 대답을<br>
+                                받아들일 수 없다.</p>
+                            <ul class="star">
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><a href="#"><img src="img/star.png" alt="평점"></a></li>
+                                <li><p>평점 : 7.09</p></li>
+                            </ul><!-- star -->
+                        </div><!-- cont5_hover -->
+                    </li>
+                </ul>
+            </div><!-- cont5 -->
+        </section><!-- container -->
+        <footer id="footer">
+            <div class="footer_m">
+                <div class="border">
+                    <ul class="fsnsM">
+                        <li><a href="#"><img src="img/fsns1.png" alt="sns아이콘"></a></li>
+                        <li><a href="#"><img src="img/fsns2.png" alt="sns아이콘"></a></li>
+                        <li><a href="#"><img src="img/fsns3.png" alt="sns아이콘"></a></li>
+                    </ul>
+                </div>
+                <p>
+                    (0437)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동) <a href="#">사업자정보확인</a><br>
+                    대표이사 : 허민희 | 사업자등록번호 : 104-81-45690 |<br>
+                    통신판매업신고번호 : 2017-서울용산-0662 | 호스팅사업자 : CJ올리브네트<br>
+                    웍스 | 개인정보보호 책임자 : 심준범 | 대표이메일 : cjcgvmaster@cj.net |<br>
+                    CGV고객센터 : 1544-1122
+                </p>
+                <ul class="fmenuM">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                </ul><!-- fmenuM -->
+            </div><!-- footer_m -->
+            <div class="footer_pc">
+                <div class="footerTop clear">
+                    <img src="img/flogo.png" alt="풋터로고" class="flogoPc">
+                    <ul class="fsnsPc clear">
+                        <li><a href="#">
+                            <img src="img/fsns1.png" alt="sns아이콘">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/fsns2.png" alt="sns아이콘">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/fsns3.png" alt="sns아이콘">
+                        </a></li>
+                    </ul><!-- fsnsPc -->
+                </div><!-- footerTop -->
+                <ul class="fmenuPc clear">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">광고/프로모션문의</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">출점문의</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">편성기준</a></li>
+                    <li class="red"><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">이메일주소무단수집거부</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li class="red"><a href="#">사이버감사실</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul><!-- fmenuPc -->
+                <div class="footerBottom">
+                    <div class="ftxt">
+                        <p>
+                            (0437)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)<br>
+                            대표이사 : 허민희 | 사업자등록번호 : 104-81-45690 | 통신판매업신고번호 : 2017-서울용산-0662<br>
+                            호스팅사업자 : CJ올리브네트웍스 | 개인정보보호 책임자 : 심준범 | 대표이메일 : cjcgvmaster@cj.net | CGV고객센터 : 1544-1122
+                        </p>
+                        <a href="#">사업자정보확인</a>
+                    </div><!-- ftxt -->
+                    <ul class="fmenuTab clear">
+                        <li class="tab1"><a href="#">이용약관</a></li>
+                        <li class="tab2"><a href="#">개인정보처리방침</a></li>
+                        <li class="tab3"><a href="#">법적고지</a></li>
+                    </ul><!-- fmenuTab -->
+                    <div class="fRight clear">
+                        <select id="cj">
+                            <option>계열사 바로가기</option>
+                            <option class="tit">CJ그룹</option>
+                            <option> CJ주식회사</option>
+                            <option class="tit">식품 & 식품서비스</option>
+                            <option> CJ제일제당</option>
+                            <option> CJ푸드빌</option>
+                            <option> CJ프레쉬웨이</option>
+                            <option class="tit">생명공학</option>
+                            <option> CJ제일제당 BIO사업부문</option>
+                            <option> CJ Feed&Card</option>
+                            <option class="tit">물류 & 신유통</option>
+                            <option> CJ대한통운</option>
+                            <option> CJ대한통운 건설부문</option>
+                            <option> CJ올리브영</option>
+                            <option> CJ올리브네트웍스</option>
+                            <option> CJ ENM 커머스부문</option>
+                            <option class="tit">엔터테이먼트 & 미디어</option>
+                            <option> CJ ENM 엔터테이먼트부문</option>
+                            <option> CJ CGV</option>
+                            <option> CJ파워캐스트</option>
+                        </select>
+                        <div class="goBtn">GO</div>
+                        <p class="copy">ⓒCJ CGV.All Rights Reserved</p>
+                    </div><!-- fRight -->
+                </div><!-- footerBottom -->
+            </div><!-- footer_pc -->
+        </footer><!-- footer -->
+        <aside id="nowgo"><a href="#">
+            <img src="img/go_icon.png" alt="바로예매탭">
+            <p>바로예매</p>
+        </a></aside><!-- nowgo -->
+    </div><!-- wrap -->
+</body>
+</html>

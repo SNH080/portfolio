@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.my-alert, .my-alert-yellow {
+  background: #eee;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.my-alert-yellow {
+  background-color: #cecece;
+  color: #fff;
+}
+
+.my-alert p, .my-alert-yellow p {
+  margin-bottom: 0;
+}
+
+/* div.container{
+    h4{
+        color: blue;
+    }
+    p{
+        color: green;
+    }
+} *//*# sourceMappingURL=Detail.css.map */
